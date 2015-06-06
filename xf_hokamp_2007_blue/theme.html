@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<link rel="shortcut icon" href="<{$xoops_imageurl}>/favicon.ico" />
+<link rel="icon" href="<{$xoops_imageurl}>/animated_favicon1.gif" type="image/gif" />
+</head>
+<body>
+<div id="topmenu">
+<div id="usernav">
+<ul>
+<li><a accesskey="0" href="<{$xoops_url}>/" title="<{$xoops_sitename}>">HOME <span class="hell">ALT+0</span></a> |</li>
+<li><a accesskey="1" href="<{$xoops_url}>/">LINK <span class="hell">ALT+1</span></a> |</li>
+<li><a accesskey="2" href="<{$xoops_url}>/">LINK <span class="hell">ALT+2</span></a> |</li>
+<li><a href="http://xoopsfactory.com/">xoopsfactory</a></li>
+</ul>
+</div>
+</div>
+<div id="page"><a name="to-top"></a>
+<div id="header">
+<div id="logo"><h1><a href="<{$xoops_url}>/" title="<{$xoops_sitename}>"><strong><{$xoops_sitename}></strong></a></h1>
+<p><{$xoops_pagetitle}></p></div>
+</div>
+
+<div id="pagelayerArray">
+<{if $xoops_showlblock == 1 or $xoops_showrblock == 1}>
+<div id="containerArray">
+<div id="contentArray">
+<{else}>
+<div id="container">
+<div id="content">
+<{/if}>
+
+<table id="maintable" cellspacing="0">
+<tr>
+<td id="centercolumn">
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr>
+<td id="centerCcolumn" colspan="2">
+<{foreach item=block from=$xoops_ccblocks}>
+<{include file="$xoops_theme/theme_blockcenter_c.html"}>
+<{/foreach}>
+</td>
+</tr>
+<tr>
+<td id="centerLcolumn">
+<{foreach item=block from=$xoops_clblocks}>
+<{include file="$xoops_theme/theme_blockcenter_l.html"}>
+<{/foreach}>
+</td>
+<td id="centerRcolumn">
+<{foreach item=block from=$xoops_crblocks}>
+<{include file="$xoops_theme/theme_blockcenter_r.html"}>
+<{/foreach}>
+</td>
+</tr>
+</table>
+<{/if}>
+
+<{if $xoops_contents}>
+<div id="xoopscontent">
+<{$xoops_contents}>
+</div>
+<{/if}>
+
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+<table cellspacing="0">
+<{if $xoBlocks.page_bottomcenter}>
+<tr>
+<td id="bottomCcolumn" colspan="2">
+<{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}>
+</td>
+</tr>
+<{/if}>
+
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+<tr>
+<td id="bottomLcolumn">
+<{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}>
+</td>
+<td id="bottomRcolumn">
+<{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}>
+</td>
+</tr>
+<{/if}>
+
+</table>
+<{/if}>
+</td>
+      
+<{if $xoops_showlblock == 1 or $xoops_showrblock == 1}>
+
+<td id="blockright">
+
+<{if $xoops_showlblock == 1}>
+<!-- <div id="lblocktop"> lblocktop</div> -->
+<{foreach item=block from=$xoops_lblocks}>
+<{include file="$xoops_theme/theme_blockleft.html"}>
+<{/foreach}>
+<!-- <div id="lblockende">lblockende</div> -->
+<{/if}>
+
+<{if $xoops_showrblock == 1}>
+<!-- <div id="rblocktop">rblocktop</div> -->
+<{foreach item=block from=$xoops_rblocks}>
+<{include file="$xoops_theme/theme_blockright.html"}>
+<{/foreach}>
+<!-- <div id="rblockende">rblockende</div> -->
+<{/if}>
+
+</td>
+<{/if}>
+</tr>
+</table>
+
+<br /><br />
+</div>
+
+<div id="footerArray"></div>
+<div id="pagefooter">
+<div id="pagefooterleft"><span class="top"><a href="#to-top">nach OBEN!</a></span></div>
+<div id="pagefooterright">&copy;2007 <a href="http://hokamp.info">michael<strong>HOKAMP</strong></a></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<ul id="mainmenu">
+<li><a class="internal" href="<{$xoops_url}>">HOME</a></li>
+<{foreach item=module from=$block.modules}>
+<{if $module.current == $module.directory}>
+<li><a class="internal" href="<{$xoops_url}>/modules/<{$module.directory}>/" title="<{$module.name}>"><{$module.name}></a></li>
+<{else}>
+<li><a class="internal" href="<{$xoops_url}>/modules/<{$module.directory}>/" title="<{$module.name}>"><{$module.name}></a></li>
+<{/if}>
+<{foreach item=sublink from=$module.sublinks}>
+<li><a class="submenu" href="<{$sublink.url}>" title="<{$sublink.name}>"><{$sublink.name}></a></li>
+<{/foreach}>
+<{/foreach}>
+</ul>

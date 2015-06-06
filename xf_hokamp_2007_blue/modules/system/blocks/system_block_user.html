@@ -1,0 +1,14 @@
+<ul id="usermenu">
+<li><a class="internal" href="<{$xoops_url}>/user.php"><{$block.lang_youraccount}></a></li>
+<li><a class="internal" href="<{$xoops_url}>/edituser.php"><{$block.lang_editaccount}></a></li>
+<li><a class="internal" href="<{$xoops_url}>/notifications.php"><{$block.lang_notifications}></a></li>
+<li><a class="internal" href="<{$xoops_url}>/user.php?op=logout"><{$block.lang_logout}></a></li>
+      <{if $block.new_messages > 0}>
+<li><a class="internal highlight" href="<{$xoops_url}>/viewpmsg.php"><{$block.lang_inbox}> (<span style="color:#ff0000; font-weight: bold;"><{$block.new_messages}></span>)</a></li>
+      <{else}>
+<li><a class="internal" href="<{$xoops_url}>/viewpmsg.php"><{$block.lang_inbox}></a></li>
+      <{/if}>
+			<{if $xoops_isadmin}>
+<li><a class="internal" href="<{$xoops_url}>/admin.php"><{$block.lang_adminmenu}></a></li>
+      <{/if}>
+</ul>

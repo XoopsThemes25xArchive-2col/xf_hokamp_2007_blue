@@ -1,0 +1,38 @@
+.entry, .entrytext {
+text-align:justify;
+}
+
+div.blockcontent{
+padding-top:10px;
+}
+
+.blockcontent small {
+text-transform:uppercase;
+}
+
+.blockcontent a {
+font-size:11px;
+color:#000;
+text-transform:uppercase;
+font-weight:bold;
+text-decoration:none;
+}
+
+.blockcontent a:hover {
+color:#999;
+text-transform:uppercase;
+font-weight:bold;
+text-decoration:none;
+}
+
+#commentform input {
+padding:3px;
+border: 1px solid #999;
+background: #ececec;
+}
+
+#commentform textarea {
+padding:3px;
+border: 1px solid #999;
+background: #ececec;
+}

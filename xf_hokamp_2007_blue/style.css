@@ -1,0 +1,471 @@
+/* 
+Theme Name: xf_hokamp2007
+Theme URI: http://hokamp.info
+Description: Mein Lieblings-Theme, hier: Zweispaltig
+Version: 1.0
+Author: Michael Hokamp 
+Author URI: http://hokamp.info from destination http://xoopsfactory.com
+*/
+
+@import url(blocks.css);
+@import url(wp.css);
+
+body { 
+color: #333; 
+background: url(images/bgcenter.gif) #ececec center repeat-y;    
+text-align: left; 
+margin: 0px;
+border: 0px;
+padding: 0px;
+font-size:13px;
+font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+line-height:18px;
+}
+
+div#page { 
+width: 770px; 
+}
+   
+div#page {
+border: 0px;
+margin: 0px auto 0px auto;
+padding: 0px;
+}
+
+#topmenu {
+text-align: right;
+border: 0px;
+border-bottom: 1px solid #fff;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+background: #000 no-repeat;
+width: 100%;
+}
+
+.hell {
+font-weight:bold;
+color: #3266CC;
+font-size:10px;
+}
+
+a:hover .hell  {
+font-weight:bold;
+color: #fff;
+font-size:10px;
+}
+
+#usernav {
+font-size:10px;
+padding:2px;
+padding-top:3px;
+text-align: right;
+padding-right:10px;
+color: #fff;
+}
+
+#usernav ul {
+list-style-type:none;
+margin:0;
+padding: 0px; 
+text-align:right;
+}
+
+#usernav li {
+display:inline;
+}
+
+#usernav li {
+margin:0;
+padding: 0px; 
+}
+
+#usernav li a{
+text-decoration:none;
+padding: 3px; 
+color: #fff;
+}
+
+#usernav li a:hover{
+padding: 3px; 
+color: #000;
+background:#3266CC;
+}
+
+#header {
+text-align: left;
+border: 0px;
+border-top: 0px solid #fff;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+background: url(images/header.gif) #3266CC top right no-repeat;
+height: 130px;
+width: 100%;
+}
+
+#header a {
+color: #fff;
+}
+
+#logo h1 {
+padding: 40px 0 5px 20px;
+color: #3266CC;
+font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+font-weight: bold;
+font-size: 24px;
+}
+
+#logo h1 a:hover {
+text-decoration:none;
+}
+
+#logo p {
+margin: 0 20px 20px 20px;
+padding: 0px;
+color: #fff;
+font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+font-weight: normal;
+font-size: 13px;
+}
+
+.clear {
+clear:both;
+}
+
+#pagelayer, #pagelayerArray {
+text-align: left;
+width: 100%;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+background-color: #fff;
+}
+
+#containerArray, #containerArrayR, #container {
+text-align: left;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+background: #fff;
+}
+
+#containerArray {
+background: url(images/bothright.gif) top right repeat-y;  
+}
+
+#contentArray {
+padding: 0px;
+}
+
+#content {
+padding: 0px;
+margin-left: 0px;
+margin-right: 0px;     
+}
+
+form#userinfo td{
+font-size:12px;    
+}
+
+form#userinfo select{
+font-size:10px;    
+}
+
+#lblocktop {
+width: 270px;
+height: 20px;
+margin: 0px;
+padding: 0px;
+background: url(images/ltopleft.gif) #ececec no-repeat;
+}
+
+td#blockleft {
+width: 270px;
+margin: 0px;
+margin-right: 0px;
+padding: 0px;
+color: #333;
+}
+
+#lblockende {
+width: 270px;
+height: 20px;
+margin: 0px;
+padding: 0px;
+background: url(images/lleftend.gif) #ececec no-repeat;
+}
+
+#rblocktop {
+width: 270px;
+height: 20px;
+margin: 0px;
+padding: 0px;
+background: url(images/ltopright.gif) #ececec no-repeat;
+}
+
+td#blockright {
+width: 270px;
+margin: 0px;
+margin-right: 0px;
+padding: 0px;
+color: #333;
+}
+
+#rblockende {
+width: 270px;
+height: 20px;
+margin: 0px;
+padding: 0px;
+background: url(images/lrightend.gif) #ececec no-repeat;
+}
+
+#footerArray {
+height:60px;
+clear: both;
+padding: 0px;
+margin-top: 0px;
+background: url(images/footerarray.gif) #3266CC top right no-repeat;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+color: #fff;
+font-size: 12px;
+}
+
+#pagefooter {
+background: #000;
+padding: 10px;
+padding-top:4px;
+padding-bottom:6px;
+color: #fff;
+font-size: 11px;
+border-bottom: 1px solid #000;
+}
+
+#pagefooter a {
+color: #fff;
+text-decoration:none;
+}
+
+#pagefooter a:hover {
+color: #3266cc;
+}
+
+#pagefooterleft {
+width: 200px; 
+float:left;
+}
+
+#pagefooterright {
+text-align: right;
+}
+
+#pagefooter strong {
+color: #3266CC;
+}
+
+#pagefooter strong:hover {
+color: #fff;
+}
+
+ul.feed {
+list-style-type:none;
+margin:0px;
+padding:0px;
+}
+
+.feed li {
+margin:0px;
+margin-top:10px;
+padding:0px;
+}
+
+.submenu a {
+background: url(images/submenu.gif) no-repeat left center;
+padding-left:17px;
+color: #3266CC;
+}
+
+.border {
+line-height:55px;
+width: 330px;
+background: #fff;
+}
+
+b {
+font-size: 13px;
+color: #3266CC;
+text-transform:uppercase;
+}
+
+a {
+text-decoration: none;
+color:#000;
+text-transform:uppercase;
+}
+
+a:hover{
+color: #999;
+text-decoration: underline;
+}
+
+p {
+padding: 10px;
+padding-left: 0px;
+margin: 0px;
+}
+
+h1 {
+margin: 0px;
+font-size: 16px;
+padding: 10px;
+padding-left: 0px;
+}
+
+h2 {
+margin: 0px;
+padding: 0px;
+text-transform:uppercase;
+}
+
+h3 {
+margin: 0px;
+padding: 0px;
+}
+
+img {
+border: 0px;
+}
+
+fieldset {
+padding: 10px;
+border: 1px dotted #ccc;
+}
+
+legend {
+padding: 10px;
+background:#fff;
+}
+
+ul {
+list-style-type:square;
+}
+
+hr {
+height: 2px; 
+border: 0px;
+color: #fff;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #fff;
+}
+
+textarea {
+width: 350px;
+}
+
+acronym, abbr {
+border-bottom: 1px dashed #999;
+}
+
+blockquote {
+margin: 15px 30px 0 10px;
+padding-left: 20px;
+border-left: 5px solid #ddd;
+}
+
+blockquote cite {
+margin: 5px 0 0;
+display: block;
+}
+
+table {
+width: 100%;
+font-size: 12px;
+}
+
+a img {
+border: none;
+}
+	
+a.dlpdf {
+padding-left: 40px;
+background: url(images/pdf-ico.gif) no-repeat;
+line-height:40px; 
+}
+
+.navigation {
+display: block;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+p.Bende {
+padding: 0px;
+padding-bottom:5px;
+border-bottom: 1px dashed #ccc;
+}
+
+p.Bende a {
+text-decoration:none;
+}
+
+
+#contentArray h2, #content h2, #xoopscontent h3, #xoopscontent h4 {
+padding: 0;
+margin: 30px 0px 0px 0px;
+font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+font-weight: bold;
+font-size: 20px;
+color: #3266CC;
+padding-bottom:10px;
+border-bottom: 1px dashed #ccc;
+}
+	
+#contentArray h2.title a, #content h2.title a{
+color: #3266CC;
+font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+font-weight: bold;
+font-size: 20px;
+padding-left: 6px;
+border-left: 4px solid #3266CC;
+padding-bottom:10px;
+border-bottom: 1px dashed #ccc;
+}
+
+.navigation {
+display: block;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.alignright {
+float: right;
+}
+	
+.alignleft {
+float: left
+}
+
+.outer {border: 0px solid silver;}
+.head {background-color: #ccc; }
+.even {background-color: #ececec; }
+.odd {background-color: #ccc; }
+.foot {background-color: #c2cdd6; }
+tr.even td {background-color: #ececec;}
+tr.odd td {background-color: #ccc; }
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
